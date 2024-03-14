@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5),
               ),
               const SizedBox(
-                width: 10,
+                width: 125,
                 child: Divider(
                   thickness: 5,
                   color: Colors.white,
@@ -52,27 +52,17 @@ class MyApp extends StatelessWidget {
               //  phone number
               const Card(
                 margin: EdgeInsets.fromLTRB(25, 10, 25, 10),
-                color: Colors.white,
-                child: const Row(
-                  children: [
-                    //phone icon
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    //  phone number
-                    Text(
-                      '+92 313 5613437',
-                      style: TextStyle(color: Colors.teal),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.call,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+923135613437',
+                    style: TextStyle(color: Colors.teal),
+                  ),
                 ),
               ),
-              SizedBox(height: 12),
               //Email
               const Card(
                 margin: EdgeInsets.fromLTRB(25, 10, 25, 10),
@@ -94,3 +84,27 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//           const Card(
+//                 margin: EdgeInsets.fromLTRB(25, 10, 25, 10),
+//                 color: Colors.white,
+//                 child: const Row(
+//                   children: [
+//                     //phone icon
+//                     Icon(
+//                       Icons.phone,
+//                       color: Colors.teal,
+//                     ),
+//
+//                     const SizedBox(
+//                       width: 10,
+//                     ),
+//                     //  phone number
+//                     Text(
+//                       '+92 313 5613437',
+//                       style: TextStyle(color: Colors.teal),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//               SizedBox(height: 12),
