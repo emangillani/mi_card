@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         appBar: AppBar(
-          title: const Text('mi card'),
+          title: Center(child: const Text('My Card')),
         ),
         body: Center(
           child: Column(
